@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "glowingores",
+	"version": "${version}",
+	"name": "Glowing Ores",
+	"description": "Glowing Ores is a mod that adds light emission to ores.",
+	"authors": [
+		"Ellet",
+		"Ahmed"
+	],
+	"contact": {
+		"homepage": "https://github.com/ellet0/glowing-ores-mc-mod",
+		"sources": "https://github.com/ellet0/glowing-ores-mc-mod",
+		"issues": "https://github.com/ellet0/glowing-ores-mc-mod/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/glowingores/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.freshplatform.GlowingOres"
+		],
+		"modmenu": [
+			"net.freshplatform.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"glowingores.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.5",
+		"minecraft": "1.20.x",
+		"java": ">=17",
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": "*"
+	},
+	"suggests": {
+		"another-mod": "glore"
+	}
+}
